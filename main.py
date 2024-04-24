@@ -1,5 +1,6 @@
-from random import randint
 from art import logo
+from random import randint
+
 
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
@@ -30,7 +31,7 @@ def game():
   print("I'm thinking of a number between 1 and 100.")
   answer = randint(1, 100)
   turns = set_difficulty()
-  #Repeat the guessing functionality if they get it wrong.
+  #Repeat the guessing functionality if they get it wrong..
   guess = 0
   while guess != answer:
     print(f"You have {turns} attempts remaining to guess the number.")
